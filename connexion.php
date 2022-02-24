@@ -11,11 +11,11 @@
       <form action="bdd.php" method="POST">
         <h1>Connexion</h1>       
         <label><b>Nom d'utilisateur : </b></label>
-        <input type="text" id="mon_input" onkeypress="verifierCaracteres(event); return false;" placeholder="Entrer le nom d'utilisateur" name="username" required>
+        <input type="text" id="mon_input" onchange="check()" onkeypress="verifierCaracteres(event); return false;" placeholder="Entrer le nom d'utilisateur" name="username" required>
         <br>
         <br>
         <label><b>Mot de passe : </b></label>
-        <input type="password" id="mon_input2" onkeypress="verifierCaracteres2(event); return false;" placeholder="Entrer le mot de passe" name="password" required>
+        <input type="password" id="mon_input2" onchange="check2()" onkeypress="verifierCaracteres2(event); return false;" placeholder="Entrer le mot de passe" name="password" required>
         <br>
         <br>
         <input type="submit" id='submit' value='Login' >
